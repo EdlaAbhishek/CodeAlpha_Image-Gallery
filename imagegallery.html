@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery Project</title>
+    <link rel="stylesheet" href="imagegallerycss.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Image Gallery</h1>
+
+        <div class="button-section">
+
+            <button onclick="filterImages('all')">All</button>
+            <button onclick="filterImages('nature')">Nature</button>
+            <button onclick="filterImages('city')">City</button>
+            <button onclick="filterImages('animals')">Animals</button>
+
+        </div>
+
+        <div class="gallery">
+
+            <div class="image-box nature">
+                <img src="Images/nature1.jpg" onclick="openLightBox(0)">
+            </div>
+
+            <div class="image-box city">
+                <img src="Images/city1.jpg" onclick="openLightBox(1)">
+            </div>
+
+            <div class="image-box animals">
+                <img src="Images/animal1.jpg" onclick="openLightBox(2)">
+            </div>
+
+            <div class="image-box nature">
+                <img src="Images/nature2.jpg" onclick="openLightBox(3)">
+            </div>
+
+            <div class="image-box city">
+                <img src="Images/city2.jpg" onclick="openLightBox(4)">
+            </div>
+
+            <div class="image-box animals">
+                <img src="Images/image2.jpg" onclick="openLightBox(5)">
+            </div>
+
+            <div class="image-box nature">
+                <img src="Images/nature3.jpg" onclick="openLightBox(6)">
+            </div>
+
+            <div class="image-box city">
+                <img src="Images/city3.jpg" onclick="openLightBox(7)">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="lightbox">
+
+        <span id="closeBtn" onclick="closeLightBox()">✖</span>
+
+        <button class="prevBtn" onclick="previousImage()">Previous</button>
+
+        <img id="lightboxImage">
+
+        <button class="nextBtn" onclick="nextImage()">Next</button>
+
+    </div>
+
+    <script src="imagegalleryjs.js"></script>
+
+</body>
+</html>
